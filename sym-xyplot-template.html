@@ -1,0 +1,83 @@
+﻿<div class="xy-container" data-handles-own-touch="true">
+   <!-- <div ng-show="!layoutMode && ((runtimeData.selectedUsingTouch || runtimeData.isSelected) && isOnlySymbolSelected())"
+         ng-class="(touchEnabled === true) ? 'xy-toolbar-touch' : 'xy-toolbar'"
+         pv-touchstart="preventPopupTrend($event)"
+         ng-dblclick="preventPopupTrend($event)">
+
+
+        <!-- Mobile version of +/- zoom buttons  
+        <div type="button" title="{{XYPlotZoomInTooltip}}"
+             ng-show="touchEnabled === true"
+             style="display:flex;"
+             class="xy-button-touch xy-regular"   
+             pv-touchend="zoomPanOption('zoomIn')"           
+             ng-click="zoomPanOption('zoomIn')">
+            <span class="xy-icon-touch zoom-in-icon-regular" />
+        </div>
+
+        <div type="button" title="{{XYPlotZoomOutTooltip}}"             
+             ng-class="(!runtimeData.zoomPanAxisRanges)
+                    ? 'xy-button-touch xy-disabled'
+                    : 'xy-button-touch xy-regular'"
+             ng-show="touchEnabled === true" 
+             pv-touchend="zoomPanOption('zoomOut')"           
+             ng-click="zoomPanOption('zoomOut')">
+            <span ng-class="(!runtimeData.zoomPanAxisRanges)
+                    ? 'xy-icon-touch zoom-out-icon-disabled'
+                    : 'xy-icon-touch zoom-out-icon-regular'" />
+        </div>
+
+        <!-- Desktop version of +/- zoom buttons 
+        <div type="button" title="{{XYPlotZoomInTooltip}}"
+             ng-show="touchEnabled !== true"
+             class="xy-button xy-regular" 
+             ng-click="zoomPanOption('zoomIn')">
+            <span class="xy-icon zoom-in-icon-regular" />
+        </div>
+
+
+
+        <div type="button" title="{{XYPlotZoomOutTooltip}}"
+             ng-show="touchEnabled !== true"
+             ng-class="(!runtimeData.zoomPanAxisRanges)
+                    ? 'xy-button xy-disabled'
+                    : 'xy-button xy-regular'" 
+             ng-click="zoomPanOption('zoomOut')">
+            <span class="xy-icon zoom-out-icon-regular" />
+        </div>
+
+        <div type="button" title="{{XYPlotPanTooltip}}"
+             ng-class="{'xy-button-touch':(touchEnabled === true),
+                'xy-button':(touchEnabled !== true),
+                ' xy-selected':IsPanMode(),
+                ' xy-disabled':!runtimeData.zoomPanAxisRanges,
+                ' xy-regular': (!IsPanMode() && runtimeData.zoomPanAxisRanges) }"
+             pv-touchend="zoomPanOption('pan')"           
+             ng-click="zoomPanOption('pan')">
+            <span ng-class="{'xy-icon-touch':(touchEnabled === true),
+                'xy-icon':(touchEnabled !== true),
+                ' pan-icon-selected':IsPanMode(),
+                ' pan-icon-disabled':!runtimeData.zoomPanAxisRanges,
+                ' pan-icon-regular': (!IsPanMode() && runtimeData.zoomPanAxisRanges) }" />
+        </div>
+
+        <div type="button" title="{{XYPlotResetTooltip}}"
+             ng-class="{'xy-button-touch':(touchEnabled === true),
+                'xy-button':(touchEnabled !== true),
+                ' xy-regular':(runtimeData.zoomPanAxisRanges),
+                ' xy-disabled':(!runtimeData.zoomPanAxisRanges)}"
+             pv-touchend="zoomPanOption('reset')"           
+             ng-click="zoomPanOption('reset')">
+            <span ng-class="{'xy-icon-touch':(touchEnabled === true),
+                'xy-icon':(touchEnabled !== true),
+                ' reset-icon-regular':(runtimeData.zoomPanAxisRanges),
+                ' reset-icon-disabled':(!runtimeData.zoomPanAxisRanges)}" />
+        </div>
+
+    </div>
+
+-->
+    <div class="chart" kendo-chart k-options="chartOptions" data-strech="true"
+         ng-attr-style="width:{{position.width}}px; height:{{position.height}}px;">
+    </div>
+</div>
